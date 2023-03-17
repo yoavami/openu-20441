@@ -7,8 +7,8 @@
 
 ## Units
 
-- [Unit 1](docs/problems/unit-1)
-- [Unit 2](docs/problems/unit-2)
+- [Unit 1](problems/unit-1)
+- [Unit 2](problems/unit-2)
 
 ## Objectives
 
