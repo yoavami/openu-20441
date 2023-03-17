@@ -1,6 +1,6 @@
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="https://upload.wikimedia.org/wikipedia/commons/thumb/7/7a/Open_university_israel_logo.svg/1200px-Open_university_israel_logo.svg.png">
-  <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/7a/Open_university_israel_logo.svg/1200px-Open_university_israel_logo.svg.png" alt="The Open University logo" height="70">
+  <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/7a/Open_university_israel_logo.svg/1200px-Open_university_israel_logo.svg.png" alt="The Open University logo" height="100">
 </picture>
 
 # The Open University | 20441 - Introduction to Computer Science Using Java
