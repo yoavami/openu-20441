@@ -3,7 +3,12 @@
   <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/7a/Open_university_israel_logo.svg/1200px-Open_university_israel_logo.svg.png" alt="The Open University logo" height="100">
 </picture>
 
-# The Open University | 20441 - Introduction to Computer Science Using Java
+# The Open University | **20441** - Introduction to Computer Science Using Java
+
+## Units
+
+- [Unit 1](docs/problems/unit-1)
+- [Unit 2](docs/problems/unit-2)
 
 ## Objectives
 
