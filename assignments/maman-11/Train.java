@@ -1,6 +1,7 @@
 /*
 Train.java
 This program takes the speed and travel time of two separate trains and outputs the distance between them
+@Author: Yoav Amit
 */
 
 import java.util.Scanner;
