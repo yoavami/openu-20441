@@ -25,13 +25,14 @@ public class Triangle {
                 System.out.println("The numbers: " + a + ", " + b + " and " + c + " represent an equilateral triangle");
             } else if (a == b || b == c || a == c) {
                 System.out.println("The numbers: " + a + ", " + b + " and " +  c + " represent an isosceles triangle");
-            } else if (Math.pow(a,2) + Math.pow(b,2) == Math.pow(c,2) || Math.pow(a,2) + Math.pow(c,2) == Math.pow(b,2) || Math.pow(b,2) + Math.pow(c,2) == Math.pow(a,2)) {
+            } else if ((Math.pow(a,2) + Math.pow(b,2) == Math.pow(c,2)) || (Math.pow(a,2) + Math.pow(c,2) == Math.pow(b,2)) || (Math.pow(b,2) + Math.pow(c,2) == Math.pow(a,2))) {
                 System.out.println("The numbers: " + a + ", " + b + " and " +  c + " represent a right-angle triangle");
             } else {
                 System.out.println("The numbers: " + a + ", " + b + " and " +  c + " represent a common triangle");
             }
-        } else {
-            System.out.println("The numbers: " + a + ", " + b + " and " +  c + " cannot represent a triangle");
         }
+        // If it is not a triangle, we print this message
+        else
+            System.out.println("The numbers: " + a + ", " + b + " and " +  c + " cannot represent a triangle");
     }
 }
