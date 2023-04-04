@@ -10,6 +10,7 @@ Introduction to Computer Science and Java
 
 - [Unit 1](problems/unit-1)
 - [Unit 2](problems/unit-2)
+- [Unit 3](problems/unit-3)
 
 ## Objectives
 
