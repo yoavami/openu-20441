@@ -7,5 +7,7 @@ public class PointTester {
         p1.printStatus();
         p1.moveTo(10, 40);
         p1.printStatus();
+        p1.moveTo(-10, -50);
+        p1.printStatus();
     }
 }
