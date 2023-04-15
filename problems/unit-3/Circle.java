@@ -78,7 +78,7 @@ public class Circle {
      * @return the center {@code Point} of the circle
      */
     public Point getCenter() {
-        return _center;
+        return new Point(_center);
     }
 
     /**
@@ -106,5 +106,57 @@ public class Circle {
      */
     public String toString() {
         return "radius: " + _radius + ", center: " + _center;
+    }
+
+    /**
+     * Returns the perimeter of the circle.
+     * @return the perimeter of the circle
+     */
+    public double perimeter() {
+        return 2 * Math.PI * _radius;
+    }
+
+    /**
+     * Returns the area of the circle.
+     * @return the area of the circle
+     */
+    public double area() {
+        return Math.PI * Math.pow(_radius, 2);
+    }
+
+    /**
+     * Moves the circle by a given amount in the x and y directions.
+     * @param dx the amount to move in the x direction
+     * @param dy the amount to move in the y direction
+     */
+    public void move(int dx, int dy) {
+        _center.move(dx, dy);
+    }
+
+    /**
+     * Returns whether the circle is equal to another circle.
+     * @param other the other circle to compare to
+     * @return true if the circles are equal, false otherwise
+     */
+    public boolean equals(Circle other) {
+        return _center.equals(other._center) && _radius == other._radius;
+    }
+
+    /**
+     * Returns whether the circle is larger than another circle.
+     * @param other the other circle to compare to
+     * @return true if the circle is larger, false otherwise
+     */
+    public boolean isLarger(Circle other) {
+        return _radius > other._radius;
+    }
+
+    /**
+     * Returns whether a given point is inside the circle.
+     * @param p the point to check
+     * @return true if the point is inside the circle, false otherwise
+     */
+    public boolean isInside(Point p) {
+        return _center.distance(p) <= _radius;
     }
 }
