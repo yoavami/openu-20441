@@ -30,6 +30,15 @@ public class Point {
     }
 
     /**
+     * Copy constructor for objects of class Point.
+     * @param other the other point to copy
+     */
+    public Point(Point other) {
+        _x = other._x;
+        _y = other._y;
+    }
+
+    /**
      * Returns a string representation of the point in the format (x,y).
      * @return a string representation of the point in the format (x,y)
      */
