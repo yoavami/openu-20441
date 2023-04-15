@@ -64,10 +64,66 @@ public class Point {
         System.out.println("(" + _x + ", " + _y + ")");
     }
 
+    /**
+     * States whether two points are equal.
+     *
+     * @param other the other point to compare to
+     * @return true if the points are equal, false otherwise
+     */
+    public boolean compare(Point other) {
+        return _x == other.getX() && _y == other.getY();
+    }
+
+    /**
+     * States whether the point is above another point.
+     *
+     * @param other the other point to compare to
+     * @return true if the point is above the other point, false otherwise
+     */
+    public boolean isAbove(Point other) {
+        return _y > other._y;
+    }
+
+    /**
+     * States whether the point is under another point.
+     *
+     * @param other the other point to compare to
+     * @return true if the point is under the other point, false otherwise
+     */
+    public boolean isUnder(Point other) {
+        return other.isAbove(this);
+    }
+
+    /**
+     * States whether the point is to the right of another point.
+     *
+     * @param other the other point to compare to
+     * @return true if the point is to the right of the other point, false otherwise
+     */
+    public boolean isRight(Point other) {
+        return _x > other._x;
+    }
+
+    /**
+     * States whether the point is to the left of another point.
+     *
+     * @param other the other point to compare to
+     * @return true if the point is to the left of the other point, false otherwise
+     */
+    public boolean isLeft(Point other) {
+        return other.isRight(this);
+    }
+
+    /**
+     * @return the x coordinate of the point
+     */
     public int getX() {
         return _x;
     }
 
+    /**
+     * @return the y coordinate of the point
+     */
     public int getY() {
         return _y;
     }
