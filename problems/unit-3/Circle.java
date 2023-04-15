@@ -32,7 +32,16 @@ public class Circle {
     public Circle(int x, int y, double radius) {
         _center = new Point(x, y);
         _radius = Math.max(radius, DEFAULT_RADIUS);
+    }
 
+    /**
+     * Constructor for objects of class Circle that takes in a radius and a point for the center.
+     * @param radius the radius of the circle
+     * @param center the center of the circle
+     */
+    public Circle(Point center, double radius) {
+        _center = new Point(center);
+        _radius = Math.max(radius, DEFAULT_RADIUS);
     }
 
     /**
@@ -41,15 +50,56 @@ public class Circle {
      */
     public Circle(Circle other) {
         if (other != null) {
-            _radius = other._radius;
             _center = new Point(other._center);
+            _radius = other._radius;
         }
+    }
+
+    // getters and setters
+    /**
+     * Returns the radius of the circle.
+     * @return the radius of the circle
+     */
+    public double getRadius() {
+        return _radius;
+    }
+
+    /**
+     * Sets the radius of the circle.
+     * If the radius is negative, it is not changed.
+     * @param radius the radius of the circle
+     */
+    public void setRadius(double radius) {
+        _radius = Math.max(radius, DEFAULT_RADIUS);
+    }
+
+    /**
+     * Returns the center {@code Point} of the circle.
+     * @return the center {@code Point} of the circle
+     */
+    public Point getCenter() {
+        return _center;
+    }
+
+    /**
+     * Sets the center {@code Point} of the circle.
+     * @param center the center {@code Point} of the circle
+     */
+    public void setCenter(Point center) {
+        _center = new Point(center);
+    }
+
+    /**
+     * Sets the center {@code Point} of the circle.
+     * @param x the x coordinate of the center
+     * @param y the y coordinate of the center
+     */
+    public void setCenter(int x, int y) {
+        _center = new Point(x, y);
     }
 
     // methods
     public String toString() {
-        return "radius: " + _radius + ", center" + _center;
+        return "radius: " + _radius + ", center: " + _center;
     }
-
-
 }
