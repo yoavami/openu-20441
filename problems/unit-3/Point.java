@@ -135,7 +135,9 @@ public class Point {
      * @param x the x coordinate of the point
      */
     public void setX(int x) {
-        _x = x;
+        if(x >= DEFAULT_VAL) {
+            _x = x;
+        }
     }
 
     /**
@@ -150,6 +152,8 @@ public class Point {
      * @param y the y coordinate of the point
      */
     public void setY(int y) {
-        _y = y;
+        if(y >= DEFAULT_VAL) {
+            _y = y;
+        }
     }
 } // end of class Point
