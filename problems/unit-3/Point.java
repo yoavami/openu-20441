@@ -1,15 +1,16 @@
 /**
- * This class represents a Point object in the first quarter of a Cartesian coordinate system.
- *
+ * Class {@code Point} represents a point in the first quarter of a Cartesian coordinate system.
  * @author Yoav Amit
  * @version 04-15-2023
  */
 public class Point {
 
+    // instance variables
     private int _x;
     private int _y;
     private final int DEFAULT_VAL = 0;
 
+    // constructors
     /**
      * Default constructor for objects of class Point.
      */
@@ -20,7 +21,7 @@ public class Point {
 
     /**
      * Constructor for objects of class Point that takes in two parameters for the x and y coordinates.
-     *
+     * If the x or y coordinate is negative, it is set to 0.
      * @param x the x coordinate of the point
      * @param y the y coordinate of the point
      */
@@ -34,10 +35,51 @@ public class Point {
      * @param other the other point to copy
      */
     public Point(Point other) {
-        _x = other._x;
-        _y = other._y;
+        if(other != null) {
+            _x = other._x;
+            _y = other._y;
+        }
     }
 
+    // getters and setters
+    /**
+     * Returns the x coordinate of the point.
+     * @return the x coordinate of the point
+     */
+    public int getX() {
+        return _x;
+    }
+
+    /**
+     * Sets the x coordinate of the point.
+     * If the x coordinate is negative, it is not changed.
+     * @param x the x coordinate of the point
+     */
+    public void setX(int x) {
+        if(x >= DEFAULT_VAL) {
+            _x = x;
+        }
+    }
+
+    /**
+     * @return the y coordinate of the point
+     */
+    public int getY() {
+        return _y;
+    }
+
+    /**
+     * Sets the y coordinate of the point.
+     * If the y coordinate is negative, it is not changed.
+     * @param y the y coordinate of the point
+     */
+    public void setY(int y) {
+        if(y >= DEFAULT_VAL) {
+            _y = y;
+        }
+    }
+
+    // methods
     /**
      * Returns a string representation of the point in the format (x,y).
      * @return a string representation of the point in the format (x,y)
@@ -72,13 +114,6 @@ public class Point {
             _x = x;
             _y = y;
         }
-    }
-
-    /**
-     * Prints the current coordinates of the point in the format (x,y).
-     */
-    public void printStatus() {
-        System.out.println("(" + _x + ", " + _y + ")");
     }
 
     /**
@@ -132,37 +167,12 @@ public class Point {
     }
 
     /**
-     * Returns the x coordinate of the point.
-     * @return the x coordinate of the point
+     * Returns the distance between the point and another point.
+     *
+     * @param other the other point to compare to
+     * @return the distance between the point and the other point
      */
-    public int getX() {
-        return _x;
-    }
-
-    /**
-     * Sets the x coordinate of the point.
-     * @param x the x coordinate of the point
-     */
-    public void setX(int x) {
-        if(x >= DEFAULT_VAL) {
-            _x = x;
-        }
-    }
-
-    /**
-     * @return the y coordinate of the point
-     */
-    public int getY() {
-        return _y;
-    }
-
-    /**
-     * Sets the y coordinate of the point.
-     * @param y the y coordinate of the point
-     */
-    public void setY(int y) {
-        if(y >= DEFAULT_VAL) {
-            _y = y;
-        }
+    public double distance(Point other) {
+        return Math.sqrt(Math.pow(_x - other._x, 2) + Math.pow(_y - other._y, 2));
     }
 } // end of class Point
