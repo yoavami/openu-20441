@@ -131,9 +131,25 @@ public class Point {
     }
 
     /**
+     * Sets the x coordinate of the point.
+     * @param x the x coordinate of the point
+     */
+    public void setX(int x) {
+        _x = x;
+    }
+
+    /**
      * @return the y coordinate of the point
      */
     public int getY() {
         return _y;
+    }
+
+    /**
+     * Sets the y coordinate of the point.
+     * @param y the y coordinate of the point
+     */
+    public void setY(int y) {
+        _y = y;
     }
 } // end of class Point
