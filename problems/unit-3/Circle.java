@@ -99,6 +99,11 @@ public class Circle {
     }
 
     // methods
+    /**
+     * Returns a string representation of the circle
+     * in the format "radius: , center: ".
+     * @return a string representation of the circle
+     */
     public String toString() {
         return "radius: " + _radius + ", center: " + _center;
     }
