@@ -122,7 +122,7 @@ public class Point {
      * @param other the other point to compare to
      * @return true if the points are equal, false otherwise
      */
-    public boolean compare(Point other) {
+    public boolean equals(Point other) {
         return _x == other.getX() && _y == other.getY();
     }
 

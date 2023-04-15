@@ -105,7 +105,7 @@ public class Circle {
      * @return a string representation of the circle
      */
     public String toString() {
-        return "radius: " + _radius + ", center: " + _center;
+        return "The center of the circle = " + _center + ", and the radius = " + _radius;
     }
 
     /**
@@ -159,4 +159,4 @@ public class Circle {
     public boolean isInside(Point p) {
         return _center.distance(p) <= _radius;
     }
-}
+} // end of class Circle
