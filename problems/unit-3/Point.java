@@ -30,6 +30,14 @@ public class Point {
     }
 
     /**
+     * Returns a string representation of the point in the format (x,y).
+     * @return a string representation of the point in the format (x,y)
+     */
+    public String toString() {
+        return "(" + _x + ", " + _y + ")";
+    }
+
+    /**
      * Moves the point by dx and dy units in the x and y directions respectively.
      * If the point is moved to a negative coordinate, it is not moved.
      *
@@ -115,6 +123,7 @@ public class Point {
     }
 
     /**
+     * Returns the x coordinate of the point.
      * @return the x coordinate of the point
      */
     public int getX() {
