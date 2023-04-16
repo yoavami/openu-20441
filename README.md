@@ -8,9 +8,9 @@ Introduction to Computer Science and Java
 
 ## Units
 
-- [Unit 1](problems/unit-1)
-- [Unit 2](problems/unit-2)
-- [Unit 3](problems/unit-3)
+- [Unit 1](notes/unit-1)
+- [Unit 2](notes/unit-2)
+- [Unit 3](notes/unit-3)
 
 ## Objectives
 
