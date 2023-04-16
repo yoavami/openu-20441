@@ -30,11 +30,11 @@ public class City {
      * @param numOfResidents the number of residents in the city
      * @param numOfNeighborhoods the number of neighborhoods in the city
      */
-    public City(String cityName, Date dateEstablished, Point cityCenter, Point centralStation, long numOfResidents, int numOfNeighborhoods) {
+    public City(String cityName, int day, int month, int year, int cityCenterX, int cityCenterY, int centralStationX, int centralStationY, long numOfResidents, int numOfNeighborhoods) {
         _cityName = cityName;
-        _dateEstablished = dateEstablished;
-        _cityCenter = cityCenter;
-        _centralStation = centralStation;
+        _dateEstablished = new Date(day, month, year);
+        _cityCenter = new Point(cityCenterX, cityCenterY);
+        _centralStation = new Point(centralStationX, centralStationY);
         _numOfResidents = Math.max(numOfResidents, MIN_RESIDENTS);
         _numOfNeighborhoods = Math.max(numOfNeighborhoods, MIN_NEIGHBORHOODS);
     }
