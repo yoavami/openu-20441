@@ -188,30 +188,6 @@ public class Date {
         return other.before(this);
     }
 
-//    /**
-//     * Converts the date to the amount of days in the date. Private method used in the difference method.
-//     * @param date the date to convert
-//     * @return the amount of days in the date
-//     */
-//    private int toDays(Date date) {
-//        int days = 0;
-//        days += _day;
-//
-//        for (int i = 1; i < _month; i++) {
-//            if (i == FEBRUARY) {
-//                days += MAX_DAYS_FEBRUARY;
-//            }
-//            else if (i == APRIL || i == JUNE || i == SEPTEMBER || i == NOVEMBER) {
-//                days += MAX_DAYS_APRIL_JUNE_SEPTEMBER_NOVEMBER;
-//            }
-//            else {
-//                days += MAX_DAYS;
-//            }
-//        }
-//        days += _year * DAYS_IN_A_YEAR;
-//        return days;
-//    }
-
     /**
      * Converts the date to the amount of days in the date. Private method used in the difference method.
      * @param day the day of the date
@@ -226,12 +202,13 @@ public class Date {
 
     /**
      * Returns the difference between this date and another date in days.
+     * Returns the absolute value of the difference.
      * @param other the other date to check
      * @return the difference between the dates in days
      */
     public int difference(Date other) {
         if (other != null) {
-            return calculateDate(this._day, this._month, this._year) - calculateDate(other._day, other._month, other._year);
+            return Math.abs(calculateDate(this._day, this._month, this._year) - calculateDate(other._day, other._month, other._year));
         }
         return 0;
     }

@@ -1,5 +1,5 @@
 /**
- * This class represents a point in a Cartesian coordinate system.
+ * Class {@code Point} represents a point in a Cartesian coordinate system.
  * The point is in the first quadrant, meaning that the x and y coordinates are positive.
  * @author Yoav Amit
  * @version 04-16-2023
