@@ -3,7 +3,7 @@
  * @author Yoav Amit
  * @version 04-15-2023
  */
-public class Point {
+public class PointNotes {
 
     // instance variables
     private int _x;
@@ -14,7 +14,7 @@ public class Point {
     /**
      * Default constructor for objects of class Point.
      */
-    public Point() {
+    public PointNotes() {
         _x = 0;
         _y = 0;
     }
@@ -25,7 +25,7 @@ public class Point {
      * @param x the x coordinate of the point
      * @param y the y coordinate of the point
      */
-    public Point(int x, int y) {
+    public PointNotes(int x, int y) {
         _x = Math.max(x, DEFAULT_VAL);
         _y = Math.max(y, DEFAULT_VAL);
     }
@@ -34,7 +34,7 @@ public class Point {
      * Copy constructor for objects of class Point.
      * @param other the other point to copy
      */
-    public Point(Point other) {
+    public PointNotes(PointNotes other) {
         if(other != null) {
             _x = other._x;
             _y = other._y;
@@ -122,7 +122,7 @@ public class Point {
      * @param other the other point to compare to
      * @return true if the points are equal, false otherwise
      */
-    public boolean equals(Point other) {
+    public boolean equals(PointNotes other) {
         return _x == other.getX() && _y == other.getY();
     }
 
@@ -132,7 +132,7 @@ public class Point {
      * @param other the other point to compare to
      * @return true if the point is above the other point, false otherwise
      */
-    public boolean isAbove(Point other) {
+    public boolean isAbove(PointNotes other) {
         return _y > other._y;
     }
 
@@ -142,7 +142,7 @@ public class Point {
      * @param other the other point to compare to
      * @return true if the point is under the other point, false otherwise
      */
-    public boolean isUnder(Point other) {
+    public boolean isUnder(PointNotes other) {
         return other.isAbove(this);
     }
 
@@ -152,7 +152,7 @@ public class Point {
      * @param other the other point to compare to
      * @return true if the point is to the right of the other point, false otherwise
      */
-    public boolean isRight(Point other) {
+    public boolean isRight(PointNotes other) {
         return _x > other._x;
     }
 
@@ -162,7 +162,7 @@ public class Point {
      * @param other the other point to compare to
      * @return true if the point is to the left of the other point, false otherwise
      */
-    public boolean isLeft(Point other) {
+    public boolean isLeft(PointNotes other) {
         return other.isRight(this);
     }
 
@@ -172,7 +172,7 @@ public class Point {
      * @param other the other point to compare to
      * @return the distance between the point and the other point
      */
-    public double distance(Point other) {
+    public double distance(PointNotes other) {
         return Math.sqrt(Math.pow(_x - other._x, 2) + Math.pow(_y - other._y, 2));
     }
 } // end of class Point

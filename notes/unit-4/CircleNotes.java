@@ -3,11 +3,11 @@
  * @author Yoav Amit
  * @version 04-15-2023
  */
-public class Circle {
+public class CircleNotes {
 
     // instance variables
     private double _radius;
-    private Point _center;
+    private PointNotes _center;
     private final int DEFAULT_RADIUS = 1;
     private final int DEFAULT_VAL = 0;
 
@@ -16,8 +16,8 @@ public class Circle {
      * Default constructor for objects of class Circle.
      * The radius is set to 0 and the center is set to (0,0).
      */
-    public Circle() {
-        _center = new Point();
+    public CircleNotes() {
+        _center = new PointNotes();
         _radius = DEFAULT_RADIUS;
     }
 
@@ -29,8 +29,8 @@ public class Circle {
      * @param y the y coordinate of the center
      * @param radius the radius of the circle
      */
-    public Circle(int x, int y, double radius) {
-        _center = new Point(x, y);
+    public CircleNotes(int x, int y, double radius) {
+        _center = new PointNotes(x, y);
         _radius = Math.max(radius, DEFAULT_RADIUS);
     }
 
@@ -39,8 +39,8 @@ public class Circle {
      * @param radius the radius of the circle
      * @param center the center of the circle
      */
-    public Circle(Point center, double radius) {
-        _center = new Point(center);
+    public CircleNotes(PointNotes center, double radius) {
+        _center = new PointNotes(center);
         _radius = Math.max(radius, DEFAULT_RADIUS);
     }
 
@@ -48,9 +48,9 @@ public class Circle {
      * Copy constructor for objects of class Circle. Takes in another circle and copies its radius and center.
      * @param other the other circle to copy
      */
-    public Circle(Circle other) {
+    public CircleNotes(CircleNotes other) {
         if (other != null) {
-            _center = new Point(other._center);
+            _center = new PointNotes(other._center);
             _radius = other._radius;
         }
     }
@@ -77,16 +77,16 @@ public class Circle {
      * Returns the center {@code Point} of the circle.
      * @return the center {@code Point} of the circle
      */
-    public Point getCenter() {
-        return new Point(_center);
+    public PointNotes getCenter() {
+        return new PointNotes(_center);
     }
 
     /**
      * Sets the center {@code Point} of the circle.
      * @param center the center {@code Point} of the circle
      */
-    public void setCenter(Point center) {
-        _center = new Point(center);
+    public void setCenter(PointNotes center) {
+        _center = new PointNotes(center);
     }
 
     /**
@@ -95,7 +95,7 @@ public class Circle {
      * @param y the y coordinate of the center
      */
     public void setCenter(int x, int y) {
-        _center = new Point(x, y);
+        _center = new PointNotes(x, y);
     }
 
     // methods
@@ -138,7 +138,7 @@ public class Circle {
      * @param other the other circle to compare to
      * @return true if the circles are equal, false otherwise
      */
-    public boolean equals(Circle other) {
+    public boolean equals(CircleNotes other) {
         return _center.equals(other._center) && _radius == other._radius;
     }
 
@@ -147,7 +147,7 @@ public class Circle {
      * @param other the other circle to compare to
      * @return true if the circle is larger, false otherwise
      */
-    public boolean isLarger(Circle other) {
+    public boolean isLarger(CircleNotes other) {
         return _radius > other._radius;
     }
 
@@ -156,7 +156,7 @@ public class Circle {
      * @param p the point to check
      * @return true if the point is inside the circle, false otherwise
      */
-    public boolean isInside(Point p) {
+    public boolean isInside(PointNotes p) {
         return _center.distance(p) <= _radius;
     }
 } // end of class Circle
