@@ -11,6 +11,7 @@ Introduction to Computer Science and Java
 - [Unit 1](notes/unit-1)
 - [Unit 2](notes/unit-2)
 - [Unit 3](notes/unit-3)
+- [Unit 4](notes/unit-4)
 
 ## Objectives
 
