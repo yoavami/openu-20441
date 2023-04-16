@@ -148,17 +148,10 @@ public class Point {
 
     /**
      * Returns the distance between the point and another point.
-     * @param other the other point to use
+     * @param p the other point to use
      * @return the distance between the two points
      */
     public double distance(Point p) {
         return Math.sqrt(Math.pow(_x - p.getX(), 2) + Math.pow(_y - p.getY(), 2));
     }
-
-
-
-
-
-
-
 }
