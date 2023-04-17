@@ -12,12 +12,12 @@ public class Date {
     private int _month;
     private int _year;
 
-    // default values
+    // default values - the default date is 1/1/2000 if the date is invalid
     private final int DEFAULT_DAY = 1;
     private final int DEFAULT_MONTH = 1;
     private final int DEFAULT_YEAR = 2000;
 
-    // min and max values
+    // min and max values - the min and max values for the day, month and year
     private final int MIN_DAYS = 1;
     private final int MAX_DAYS = 31;
     private final int MIN_MONTHS = 1;
@@ -25,7 +25,7 @@ public class Date {
     private final int MIN_YEARS = 1000;
     private final int MAX_YEARS = 9999;
 
-    // specific cases declarations
+    // specific cases declarations - the max days for february (which has 28) and the months that have 30 days
     private final int FEBRUARY = 2;
     private final int MAX_DAYS_FEBRUARY = 28;
     private final int APRIL = 4;
