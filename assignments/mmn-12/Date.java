@@ -79,10 +79,10 @@ public class Date {
     private boolean isValidDate(int day, int month, int year) {
 
         // check if the date is valid
-        if (day > MIN_DAYS && day <= MAX_DAYS && month > MIN_MONTHS && month <= MAX_MONTHS && year > MIN_YEARS && year <= MAX_YEARS) {
+        if (day >= MIN_DAYS && day <= MAX_DAYS && month >= MIN_MONTHS && month <= MAX_MONTHS && year >= MIN_YEARS && year <= MAX_YEARS) {
             if (month == FEBRUARY && day > MAX_DAYS_FEBRUARY)
                 return false;
-            if (month == APRIL || month == JUNE || month == SEPTEMBER || month == NOVEMBER && day > MAX_DAYS_APRIL_JUNE_SEPTEMBER_NOVEMBER)
+            else if (month == APRIL || month == JUNE || month == SEPTEMBER || month == NOVEMBER && day > MAX_DAYS_APRIL_JUNE_SEPTEMBER_NOVEMBER)
                 return false;
             return true;
         }
@@ -227,7 +227,18 @@ public class Date {
      */
     public Date tomorrow() {
         Date tomorrow = new Date(this);
-        tomorrow.setDay(tomorrow.getDay() + 1);
+        if (tomorrow.isValidDate(tomorrow.getDay() + 1, tomorrow.getMonth(), tomorrow.getYear())) {
+            tomorrow.setDay(tomorrow.getDay() + 1);
+        }
+        else if (tomorrow.isValidDate(1, tomorrow.getMonth() + 1, tomorrow.getYear())) {
+            tomorrow.setDay(1);
+            tomorrow.setMonth(tomorrow.getMonth() + 1);
+        }
+        else if (tomorrow.isValidDate(1, 1, tomorrow.getYear() + 1)) {
+            tomorrow.setDay(1);
+            tomorrow.setMonth(1);
+            tomorrow.setYear(tomorrow.getYear() + 1);
+        }
         return tomorrow;
     }
 }
