@@ -77,16 +77,16 @@ public class Date {
      * @return true if the date is valid, false otherwise
      */
     private boolean isValidDate(int day, int month, int year) {
-
-        // check if the date is valid
         if (day >= MIN_DAYS && day <= MAX_DAYS && month >= MIN_MONTHS && month <= MAX_MONTHS && year >= MIN_YEARS && year <= MAX_YEARS) {
             if (month == FEBRUARY && day > MAX_DAYS_FEBRUARY)
                 return false;
-            else if ((month == APRIL || month == JUNE || month == SEPTEMBER || month == NOVEMBER) && day > MAX_DAYS_APRIL_JUNE_SEPTEMBER_NOVEMBER)
+            else if ((month == APRIL || month == JUNE || month == SEPTEMBER || month == NOVEMBER) && (day > MAX_DAYS_APRIL_JUNE_SEPTEMBER_NOVEMBER))
                 return false;
             return true;
         }
-        return false;
+        else {
+            return false;
+        }
     }
 
     // getters and setters

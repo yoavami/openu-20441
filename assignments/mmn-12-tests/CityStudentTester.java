@@ -50,7 +50,7 @@ public class CityStudentTester
         else 
              System.out.println("\tcity5 wasn't established between " + d1 + " and " + d2);
         System.out.println("\n8. Testing establishmentDateDiff method:");
-        System.out.println("\tDiffernce of establishment dates between city1 and city2: " + city1.establishmentDateDiff(city2));
+        System.out.println("\tDiffernce of establishment dates between city5 and city3: " + city5.establishmentDateDiff(city3));
         System.out.println("\n********** Test City - Finished **********\n");
     
     }

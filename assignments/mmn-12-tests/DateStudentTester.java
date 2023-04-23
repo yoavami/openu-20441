@@ -35,7 +35,7 @@ public class DateStudentTester
         else 
              System.out.println("\td3 isn't after d1");      
         System.out.println("\n6. Testing difference method:");
-        System.out.println("\tThe difference in days between dates d2 and d3 is : "+d2.difference(d3));
+        System.out.println("\tThe difference in days between dates d1 and d3 is : "+d1.difference(d3));
         System.out.println("\n7. Testing tomorrow method:");
         Date d6=new Date(6,11,2016);
         System.out.println("\t" + d6+" tomorrow is : "+d6.tomorrow());
