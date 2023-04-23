@@ -1,0 +1,32 @@
+********** Test Date - Started **********
+
+1. Testing Constructors and toString:
+	d1:13/10/1998
+	d2:13/10/1998
+
+2. Testing accessors and mutators:
+	d1:08/10/2016
+	day of d1:8
+	month of d1:10
+	year of d1:2016
+
+3. Testing equals method:
+	d3:03/05/1998
+	d4:03/05/1998
+	d3 is the same date as d4
+
+4. Testing before method:
+	d3 is before d1
+
+5. Testing after method:
+	d3 isn't after d1
+
+6. Testing difference method:
+	The difference in days between dates d2 and d3 is : 163
+
+7. Testing tomorrow method:
+	06/11/2016 tomorrow is : 07/11/2016
+	31/12/2019 tomorrow is : 01/01/2020
+
+********** Test Date - Finished **********
+

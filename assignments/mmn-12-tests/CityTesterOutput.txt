@@ -1,0 +1,76 @@
+********** Test City - Started **********
+
+1. Testing Constructors and toString:
+	city1:
+City name: Dimona
+Date established: 15/09/1955
+City center: (10,15)
+Central station: (50,70)
+Number of residents: 36854
+Number of neighborhoods: 20
+	city2:
+City name: Dimona
+Date established: 15/09/1955
+City center: (10,15)
+Central station: (50,70)
+Number of residents: 36854
+Number of neighborhoods: 20
+
+2. Testing accessors and mutators:
+	city1:
+City name: AnotherCity
+Date established: 01/09/1955
+City center: (20,30)
+Central station: (20,30)
+Number of residents: 40000
+Number of neighborhoods: 50
+	Name of city1:AnotherCity
+	Date established of city1:01/09/1955
+	Center of city1:(20,30)
+	DCentral station of city1:(20,30)
+	Number of residents of city1:40000
+	Number of neighborhoods of city1:50
+
+3. Testing equals method:
+	city3:
+City name: SomeCity
+Date established: 02/08/1000
+City center: (10,20)
+Central station: (30,40)
+Number of residents: 10000
+Number of neighborhoods: 50
+	city4:
+City name: SomeCity
+Date established: 02/08/1000
+City center: (10,20)
+Central station: (30,40)
+Number of residents: 10000
+Number of neighborhoods: 50
+	city3 is the same date as city4
+
+4. Testing addResidents method:
+	Number of residents of city1 (after adding 200):40200
+
+5. Testing moveCentralStation method:
+	Central station of city1 after moving (100,200):(120,230)
+
+6. Testing distanceBetweenCenterAndStation method:
+	Distance between center and central station of city1:223.60679774997897
+
+6. Testing newCity method based on city1 parameters (method parameters are newCityName="newName" dX=-50 and dY=-150):
+	city5 (the new city) is:
+City name: newName
+Date established: 02/09/1955
+City center: (20,30)
+Central station: (70,80)
+Number of residents: 0
+Number of neighborhoods: 1
+
+7. Testing cityEstablishedBetweenDates method:
+	city5 was established between 01/09/1955 and 10/10/2020
+
+8. Testing establishmentDateDiff method:
+	Differnce of establishment dates between city1 and city2: 14
+
+********** Test City - Finished **********
+

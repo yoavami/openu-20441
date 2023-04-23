@@ -1,0 +1,39 @@
+********** Test Point - Started **********
+
+1. Testing Constructors and toString:
+	p1:(20,60)
+	p2:(20,60)
+
+2. Testing accessors and mutators:
+	p1:(30,100)
+	X coordinate of p1:30
+	Y coordinate of p1:100
+
+3. Testing equals method:
+	p3:(50,70)
+	p4:(50,70)
+	p3 is the same point as p4
+
+4. Testing isAbove method:
+	p3 isn't above p1
+
+5. Testing isUnder method:
+	p3 is under p1
+
+6. Testing isLeft method:
+	p3 isn't left of p1
+
+7. Testing isRight method:
+	p3 is right of p1
+
+8. Testing distance method:
+	The distance between dates p1 and p3 is : 36.05551275463989
+
+9. Testing move method:
+	p1 after move (100,200):(130,300)
+
+10. Testing middle method:
+	The middle between points p1 and p3 is : (90,185)
+
+********** Test Point - Finished **********
+

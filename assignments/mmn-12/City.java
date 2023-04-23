@@ -231,9 +231,9 @@ public class City {
      */
     public boolean cityEstablishedBetweenDates(Date date1, Date date2) {
         if (date1.after(date2)) {
-            return (_dateEstablished.after(date1) && _dateEstablished.before(date2));
+            return (_dateEstablished.after(date2) && _dateEstablished.before(date1));
         }
-        return (_dateEstablished.after(date2) && _dateEstablished.before(date1));
+        return (_dateEstablished.after(date1) && _dateEstablished.before(date2));
     }
 
     /**
