@@ -1,7 +1,7 @@
-<picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://upload.wikimedia.org/wikipedia/commons/thumb/7/7a/Open_university_israel_logo.svg/1200px-Open_university_israel_logo.svg.png">
-  <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/7a/Open_university_israel_logo.svg/1200px-Open_university_israel_logo.svg.png" alt="The Open University logo" height="100">
-</picture>
+<p align="center">
+ <source media="(prefers-color-scheme: dark)" srcset="https://upload.wikimedia.org/wikipedia/commons/thumb/7/7a/Open_university_israel_logo.svg/1200px-Open_university_israel_logo.svg.png">
+  <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/7a/Open_university_israel_logo.svg/1200px-Open_university_israel_logo.svg.png" alt="The Open University logo" height="150">
+</p>
 
 # The Open University | [**20441**](https://www-e.openu.ac.il/courses/20441.htm#:~:text=20441%20Introduction%20to%20Computer%20Science%20Using%20Java%201&text=Objectives%3A%20The%20course%20serves%20as,analyzing%20algorithms%2C%20and%20programming%20principles.)
 Introduction to Computer Science and Java
