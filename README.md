@@ -15,6 +15,11 @@ Introduction to Computer Science and Java
 - [Unit 5](notes/unit-5)
 - [Unit 6](notes/unit-6)
 
+## Assignments
+
+- [MMN 11](assignments/mmn-11)
+- [MMN 12](assignments/mmn-12)
+
 ## Objectives
 
 The course serves as an introduction to Computer Science and programming. It deals with basic issues in Computer Science, problem solving, writing and analyzing algorithms, and programming principles. The programming paradigm is Object Oriented Programming (OOP) and the language used is Java.
