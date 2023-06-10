@@ -1,26 +1,6 @@
 import static java.util.Arrays.stream;
 
 public class Ex13 {
-    public static void main(String[] args) {
-        // QUESTION 1
-        int[] road1 = {5, 4, 5, 8, 12, 9, 9, 3};
-        int[] road2 = {7, 3, 3, 12, 10, 2, 10, 7};
-        int fastestTime = shortestRoad(road1, road2);
-        System.out.println("Fastest route time: " + fastestTime + " minutes");
-
-        // QUESTION 2
-        int[] arr1 = {-2, 1, 4, 7, 10, 13, 16, 22, 25};
-        System.out.println("The missing value is: " +  missingValue(arr1));
-
-        // QUESTION 3
-        int[] arr2 = {1, 3, 2, 3, 10, 10, 3, 2, 4};
-        System.out.println("The longest palindrome is: " + longestPalindrome(arr2));
-
-        // QUESTION 4
-        int[] arr3 = {5, 4, 2, 1, 3};
-        int num = 17;
-        System.out.println("isSum = " + isSum(arr3, num));
-    }
 
     // QUESTION 1
     /**
@@ -161,10 +141,28 @@ public class Ex13 {
 
 
     // QUESTION 4
+    /**
+     * This method checks if there is a subset in an array that sums up to a given number.
+     *
+     * Time complexity: O(2^n)
+     * Space complexity: O(n)
+     *
+     * @param arr the array to search in.
+     * @param num the number to check if there is a subset that sums up to it.
+     * @return true if there is a subset that sums up to num, false otherwise.
+     */
     public static boolean isSum(int[] arr, int num) {
         return hasSubsetWithSum(arr, num, 0, false);
     }
 
+    /**
+     * This method checks if there is a subset in an array that sums up to a given number.
+     * @param arr the array to search in.
+     * @param num the number to check if there is a subset that sums up to it.
+     * @param index the current index in the array.
+     * @param adjacentTaken true if the previous element was taken, false otherwise.
+     * @return true if there is a subset that sums up to num, false otherwise.
+     */
     private static boolean hasSubsetWithSum(int[] arr, int num, int index, boolean adjacentTaken) {
         if (num == 0) {
             return true; // Base case: subset with sum equal to num is found
