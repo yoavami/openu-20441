@@ -1,7 +1,6 @@
 import static java.util.Arrays.stream;
 
 public class Ex13 {
-
     // QUESTION 1
     /**
      * This method finds the shortest path between two roads.

@@ -48,7 +48,7 @@ public class CircleNotes {
      * Copy constructor for objects of class Circle. Takes in another circle and copies its radius and center.
      * @param other the other circle to copy
      */
-    public CircleNotes(CircleNotes other) {
+    public CircleNotes(Circle other) {
         if (other != null) {
             _center = new PointNotes(other._center);
             _radius = other._radius;
@@ -138,7 +138,7 @@ public class CircleNotes {
      * @param other the other circle to compare to
      * @return true if the circles are equal, false otherwise
      */
-    public boolean equals(CircleNotes other) {
+    public boolean equals(Circle other) {
         return _center.equals(other._center) && _radius == other._radius;
     }
 
@@ -147,7 +147,7 @@ public class CircleNotes {
      * @param other the other circle to compare to
      * @return true if the circle is larger, false otherwise
      */
-    public boolean isLarger(CircleNotes other) {
+    public boolean isLarger(Circle other) {
         return _radius > other._radius;
     }
 
